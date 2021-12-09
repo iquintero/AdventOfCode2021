@@ -6,7 +6,7 @@ use std::collections::VecDeque;
 // Part 2 input is the same as Day1
 const FILE_NAME: &str = "src/inputs/day1.txt";
 
-fn main() {
+fn day1_1() {
   let mut count = 0;
   let mut prev_sum = 0;
   let mut sum = 0;
