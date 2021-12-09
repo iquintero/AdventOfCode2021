@@ -9,12 +9,14 @@ mod day2;
 fn main() {
   let args: Vec<String> = env::args().collect();
   let day = &args[1];
-  let file = "src/inputs/".to_owned() + &day.to_owned() + ".txt";
+  let day_for_file = day.split('_').collect::<Vec<&str>>()[0];
+  let file = "src/inputs/".to_owned() + &day_for_file.to_owned() + ".txt";
  
   if let Ok(lines) = read_lines(file) {
     match day.as_ref() {
       "day1" => day1::day1(lines),
       "day2" => day2::day2(lines),
+      "day2_2" => day2::day2_2(lines),
       _ => {}
     }
   }
