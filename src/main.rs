@@ -5,6 +5,7 @@ use std::path::Path;
 
 mod day1;
 mod day2;
+mod day3;
 
 fn main() {
   let args: Vec<String> = env::args().collect();
@@ -17,6 +18,7 @@ fn main() {
       "day1" => day1::day1(lines),
       "day2" => day2::day2(lines),
       "day2_2" => day2::day2_2(lines),
+      "day3" => day3::day3(lines),
       _ => {}
     }
   }
