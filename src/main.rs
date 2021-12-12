@@ -19,6 +19,7 @@ fn main() {
       "day2" => day2::day2(lines),
       "day2_2" => day2::day2_2(lines),
       "day3" => day3::day3(lines),
+      "day3_2" => day3::day3_2(lines),
       _ => {}
     }
   }
